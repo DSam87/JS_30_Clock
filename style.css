@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body {
+}
+
 .container {
   background-color: rgba(0, 0, 0, 0.945);
   width: 100vw;
@@ -20,12 +23,36 @@
       rgba(0, 0, 0, 0.363),
       rgba(31, 67, 78, 0.733)
     ),
-    url(./imgs/pexels-nicole-avagliano-2706654.jpg);
+    url(./imgs/lowrez.jpg);
 }
 
 .clock {
+  position: relative;
   border-radius: 50%;
   border: white 15px solid;
   height: 400px;
   width: 400px;
+  padding: 15px;
+}
+
+.hand {
+  position: absolute;
+  width: 45%;
+  height: 5px;
+  top: 50%;
+  background-color: white;
+
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  /* transition: all 0.5s; */
+  /* transition-timing-function: cubic-bezier(0, 1.21, 0.4, 1.57); */
+}
+
+.second-hand {
+}
+
+.min-hand {
+}
+
+.hour-hand {
 }
